@@ -4,6 +4,7 @@ const passport = require('passport')
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const User = require('../Models/User')
 
+app.set('trust proxy', 1);
 
 const getCallbackURL = () => {
   if (process.env.NODE_ENV === 'production') {
