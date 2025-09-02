@@ -161,13 +161,19 @@ DELETE /dashboard/item-delete/:id - Delete note
 ![alt text](readme-pics/search.png)
 ![alt text](readme-pics/end.png)
 ![alt text](readme-pics/search3.png)
-![alt text](readme-pics/back.png)
 ![alt text](readme-pics/search4.png)
 
 
 GET /dashboard/search - Search page
 POST /dashboard/search - Search notes
 
+
+Middleware -> server/middleware/checkAuth.js
+
+![alt text](readme-pics/auth.png)
+
+
+in routes -> auth.js u need to import isLoggedIn and use it, u can see on picture on every end point that u need
 
 🎨 UI/UX Features
 
