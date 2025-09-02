@@ -4,14 +4,7 @@ const passport = require('passport')
 var GoogleStrategy = require('passport-google-oauth20').Strategy;
 const User = require('../Models/User')
 
-// app.set('trust proxy', 1);
 
-const getCallbackURL = () => {
-  if (process.env.NODE_ENV === 'production') {
-    return process.env.GOOGLE_CALLBACK_URL;
-  }
-  return process.env.REDIRECT_URI || 'http://localhost:5000/google/callback';
-};
 
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
@@ -24,9 +17,7 @@ passport.use(new GoogleStrategy({
 
   // done cb 
   async function (accessToken, refreshToken, profile, done) {
-    //     User.findOrCreate({ googleId: profile.id }, function (err, user) {
-    //       return cb(err, user);
-    //     });
+ 
 
     const newUser = {
       googleId: profile.id,
@@ -54,6 +45,9 @@ passport.use(new GoogleStrategy({
 // Google Login Route
 router.get('/auth/google',
   passport.authenticate('google', { scope: ['email', 'profile'] }));
+
+
+
 // Retrieve user data
 router.get('/google/callback',
   passport.authenticate('google',
