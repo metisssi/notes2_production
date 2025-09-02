@@ -123,7 +123,7 @@ notes-app/
 └── README.md
 ```
 
-## 🔥 What the code does:
+## 🔥 What the code does app.js:
 
 1. **📦 Loads libraries** - Express, Passport, MongoDB, etc.
 2. **🔐 Configures sessions** - for authorization via Google
@@ -146,6 +146,8 @@ notes-app/
 ### 📝 Notes (requires authorization)
 
 **Main Dashboard:**
+![alt text](readme-pics/notes-main.png) -> for unauthorized user 
+![alt text](readme-pics/notes-main-autoraz.png) -> for autorized user
 - `GET /dashboard` - Main page with notes
 
 **Creating Notes:**
