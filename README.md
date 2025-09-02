@@ -151,15 +151,23 @@ notes-app/
 - `GET /dashboard` - Main page with notes
 
 **Creating Notes:**
+![alt text](readme-pics/dashboard-add.png) -> for post just write some text and click add
 - `GET /dashboard/add` - Form for creating a note
 - `POST /dashboard/add` - Create a new note *(just write some text and click + Add Note)*
 
 **Managing Notes:**
+![alt text](readme-pics/dashboard-item-id.png) -> differences between dashboard/add that are in the form of text here we have some text cuz we click on specific object
 - `GET /dashboard/item/:id` - View/edit a note *(form with existing text)*
 - `PUT /dashboard/item/:id` - Update a note *(click update button)*
 - `DELETE /dashboard/item-delete/:id` - Delete note
 
 **Search Functionality:**
+![alt text](readme-pics/search.png)
+![alt text](readme-pics/search2.png)
+![alt text](readme-pics/all.png)
+![alt text](readme-pics/search3.png)
+![alt text](readme-pics/search4.png)
+
 - `GET /dashboard/search` - Search page
 - `POST /dashboard/search` - Search notes
 
@@ -177,7 +185,8 @@ exports.isLoggedIn = function (req, res, next) {
 }
 ```
 
-**Usage in routes:** Import `isLoggedIn` and use it on every protected endpoint.
+**Usage in routes:** Import `isLoggedIn` and use it on every protected endpoint. -> routes -> dashboard.js -> u can wee import isLoggedIn and use on every point 
+![alt text](readme-pics/auth.png)
 
 ## 🎨 UI/UX Features
 
