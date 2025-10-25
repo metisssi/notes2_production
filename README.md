@@ -151,7 +151,8 @@ notes-app/
 - `GET /dashboard` - Main page with notes
 
 **Creating Notes:**
-![alt text](readme-pics/dashboard-add.png) -> for post just write some text and click add
+<img width="1915" height="953" alt="image" src="https://github.com/user-attachments/assets/c2602301-b067-4e9b-8d7a-ddb2be8c08d1" />
+ -> for post just write some text and click add
 - `GET /dashboard/add` - Form for creating a note
 - `POST /dashboard/add` - Create a new note *(just write some text and click + Add Note)*
 
