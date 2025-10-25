@@ -1,4 +1,4 @@
-# 📝 Notes App - https://notes-app-3xb1.onrender.com/
+# 📝 Notes App - https://notes2-production.onrender.com/
 
 A modern web application for creating and managing notes with Google OAuth authorization.
 
